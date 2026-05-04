@@ -1,10 +1,10 @@
 .header {
-  background: #151515 url('../img/intro-bg.jpg') no-repeat center center/cover;
+  background: #151515 url("../img/intro-bg.jpg") no-repeat center center/cover;
   background-attachment: fixed;
 }
 
 .header::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -14,11 +14,11 @@
 }
 
 .header .text-container {
-  z-index: 10;
+  z-index: 1;
 }
 
 .header .roles {
-  font-family: 'lora-regular', sans-serif;
+  font-family: "lora-regular", sans-serif;
 }
 
 .header .social {
@@ -27,6 +27,12 @@
 
 .about-img {
   width: 200px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
 }
 
 @media (max-width: 767px) {
